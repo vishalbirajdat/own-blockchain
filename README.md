@@ -1,1 +1,6 @@
-# own-blockchain
+
+```bash
+npm run dev
+# or
+yarn dev
+```
