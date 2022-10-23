@@ -15,6 +15,9 @@ Certificate Link : [https://github.com/vishalbirajdat/own-blockchain/blob/main/u
 ## How is it work ?
 
 run 
+http://localhost:3000/blockchain
+
+
 ```bash
    "node_1": "nodemon --watch dev -e js dev/networkNode.js 3001 http://localhost:3001",
     "node_2": "nodemon --watch dev -e js dev/networkNode.js 3002 http://localhost:3002",
@@ -50,6 +53,27 @@ add in body
   "newNodeUrl": "http://localhost:3003"
 }
 ```
+
+http://localhost:3001/transaction/broadcast
+add in body
+ ```bash
+{
+  "amount":960,
+  "sender":"87gdfgfdtyuiopkjhgfr567hjjj",
+  "recipient":"oioiooi87yuytrfgfvdr456tjh"
+}
+```
+
+
+run
+http://localhost:3000/mine
+
+
+run 
+http://localhost:3000/blockchain
+
+
+
 
 ## What is used To make this project ? 
 - javacript
