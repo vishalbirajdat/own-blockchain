@@ -5,6 +5,9 @@ Linkedin  Profile [https://www.linkedin.com/in/vishal-birajdar-523b12197](https:
 ## Project Name : Own Blockchain
 Link : [https://github.com/vishalbirajdat/own-blockchain/](https://github.com/vishalbirajdat/own-blockchain)
 
+## Certificate : Proof Of Creted Own Blockchain By Course
+Certificate Link : [https://github.com/vishalbirajdat/own-blockchain/blob/main/udemy.pdf](https://github.com/vishalbirajdat/own-blockchain/blob/main/udemy.pdf)
+
 ## project Aim
 
 -Make own blockchain which works on nodes/Networks distributed and decentralize.
@@ -20,8 +23,33 @@ run
     "node_5": "nodemon --watch dev -e js dev/networkNode.js 3005 http://localhost:3005",
 ```
 
+http://localhost:3001/register-node  
+add in body
+ ```bash
+ {
+  "newNodeUrl":"http://localhost:3002"
+}
+```
 
- 
+http://localhost:3001/register-node-bulk
+add in body
+ ```bash
+ {
+  "allNetworkNodes": [
+    "http://localhost:3002",
+    "http://localhost:3001",
+    "http://localhost:3004"
+  ]
+}
+```
+
+http://localhost:3001/register-and-broadcast-node
+add in body
+ ```bash
+{
+  "newNodeUrl": "http://localhost:3003"
+}
+```
 
 ## What is used To make this project ? 
 - javacript
